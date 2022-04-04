@@ -1,0 +1,311 @@
+:root {
+    --primary-color: #e50914;
+    --dark-color: #141414;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: #000;
+    color: #999;
+}
+
+ul {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    color: #999;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+p {
+    margin: 0.5rem 0;
+}
+
+img {
+    width: 100%;
+}
+
+.containers {
+    width: 100%;
+    margin: auto;
+    padding: 0 1.5em;
+}
+
+.content {
+    margin-bottom: 1em;
+}
+
+.section_header {
+    font-family: "Josefin Sans";
+    font-weight: normal;
+    color: rgb(247, 151, 122);
+    text-align: center;
+    font-size: 2.5em;
+}
+
+.table {
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+    background: linear-gradient(to right, rgb(172, 170, 164), rgba(233, 122, 88, 0.8));
+    border: 2px solid;
+    border-radius: 8px;
+    box-shadow: 1px 2px 45px rgb(44, 2, 2);
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    border-bottom: 1px solid black;
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.row-item {
+    padding: 20px;
+}
+
+.row:last-child {
+    border-bottom: none;
+}
+
+.serial {
+    color: rgb(26, 25, 25);
+    font-weight: bold;
+    width: 11%;
+}
+
+.btn {
+    text-align: center;
+    vertical-align: middle;
+    padding: .67em;
+    cursor: pointer;
+    margin: 4px
+}
+
+.layer {
+    color: rgb(26, 25, 25);
+    width: 24%;
+}
+
+.dist {
+    width: 22%;
+}
+
+.view-btn {
+    max-width: 19%;
+}
+
+.btn-primary {
+    /* color: white; */
+    background-color: #56ccf2;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+
+.btn-primary1 {
+    /* color: white; */
+    background-color: #4a4c4d;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+
+.btn-primary1:hover {
+    background-color: #3495ce;
+}
+
+.btn-primary>a {
+    padding: 12px;
+    text-decoration: none;
+    font-size: 1.2em;
+    color: antiquewhite;
+}
+
+.btn-primary:hover {
+    background-color: #3495ce;
+}
+
+.showcase {
+    width: 100%;
+    height: 93vh;
+    position: relative;
+    background: url('../img/background.jpg') no-repeat center center/cover;
+}
+
+.showcase::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.6);
+    box-shadow: inset 120px 100px 250px #000000, inset -120px -80px 250px #000000;
+    /* box-shadow: inset 14px 10px 127px 80px rgba(0,0,0,0.75); */
+}
+
+.showcase-top {
+    position: relative;
+    height: 90px;
+    z-index: 2;
+}
+
+.showcase-top img {
+    width: 170px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.showcase-top a {
+    position: absolute;
+    top: 60%;
+    right: 0%;
+    transform: translate(-50%, -50%);
+}
+
+.showcase-content {
+    position: relative;
+    z-index: 2;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 9rem;
+}
+
+.showcase-content h1 {
+    font-weight: bold;
+    font-size: 5rem;
+    padding: 10px;
+    color: white;
+}
+
+.showcase-content p {
+    text-transform: uppercase;
+    color: white;
+    padding: 10px;
+    font-weight: 400;
+    font-size: 1.9rem;
+    line-height: 1.25;
+}
+
+.showcase-content a {
+    font-weight: 400;
+}
+
+
+/* Tabs */
+
+.tabs {
+    background: var(--dark-color);
+    padding-top: 1rem;
+    border-bottom: 3px solid #3d3d3d;
+}
+
+.tabs .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1 rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.tabs .container>div {
+    padding: 1rem 0;
+}
+
+.tabs .container>div:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.tab-border {
+    border-bottom: 3px solid var(--primary-color);
+    color: white;
+}
+
+
+/* Footer */
+
+.footer {
+    max-width: 75%;
+    margin: 1rem auto;
+}
+
+.footer,
+.footer a {
+    color: #999;
+    font-size: 0.9rem;
+}
+
+.footer-cols {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+}
+
+.footer li {
+    line-height: 1.9;
+}
+
+.footer p {
+    margin-top: 1.2rem;
+}
+
+
+/* Buttons */
+
+.btn {
+    display: inline-block;
+    background: var(--primary-color);
+    text-align: center;
+    font-size: 1rem;
+    padding: 0.4rem 1.3rem;
+    cursor: pointer;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.45);
+    border-radius: 2px;
+    margin-right: 0.5rem;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.btn-xl {
+    font-size: 2rem;
+    padding: 1.5rem 2.1rem;
+    text-transform: uppercase;
+}
+
+.btn-lg {
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding: 1.5rem 2rem;
+}
+
+.btn-rounded {
+    border-radius: 5px;
+}
